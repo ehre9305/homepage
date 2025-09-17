@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Ehrenreich Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f9fc;
+            color: #222;
+        }
+        header {
+            background: #2d3142;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #2d3142;
+            margin-top: 2rem;
+            font-size: 2rem;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 1rem auto;
+            display: block;
+            border: 4px solid #4f5d75;
+        }
+        .about, .experience, .education, .skills, .projects, .contact {
+            background: #e0e6ed;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(77, 91, 122, 0.08);
+            border: 1px solid #e0e6ed;
+        }
+        .project-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #4f5d75;
+        }
+        .project-card p {
+            margin: 0.5rem 0 0 0;
+        }
+        .project-card a {
+            color: #2d3142;
+            text-decoration: underline;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact a {
+            color: #2d3142;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        ul {
+            margin: 0.5rem 0 0 1.25rem;
+        }
+        .section-title {
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .container { padding: 1rem 0.5rem; }
+            .projects-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kyle Ehrenreich</h1>
+        <p>Full-Stack Developer | Computer Science Student | Software Development Intern</p>
+    </header>
+    <div class="container">
+        <section class="about">
+            <h2 class="section-title">Personal Statement</h2>
+            <p>
+                Detail-oriented full-stack developer with hands-on experience in building, testing, and maintaining applications. 
+                A Computer Science student at UW-Madison and a Software Development Intern at Certifi, passionate about creating efficient, secure, and user-friendly software solutions.
+            </p>
+        </section>
+
+        <section class="experience">
+            <h2 class="section-title">Experience</h2>
+            <strong>Software Development Intern — Certifi</strong> <br>
+            <em>June 2024 – Present</em>
+            <ul>
+                <li>Accelerated development by implementing hot code reload, eliminating server restart delays to improve developer productivity.</li>
+                <li>Enhanced and unified user experience by creating a system-wide confirmation popup and a drag-and-drop ordering system for intuitive data management.</li>
+                <li>Resolved data inconsistencies by using SQL to dynamically update over 100 tables across 30+ schemas, affecting more than 2 billion rows.</li>
+                <li>Increased system transparency and accountability by implementing system-wide user modification tracking.</li>
+                <li>Strengthened application security by identifying and fixing Cross-Site Scripting (XSS) vulnerabilities and other potential security threats.</li>
+                <li>Contributed to modernization efforts by migrating legacy enterprise code from Java EE to Jakarta EE.</li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2 class="section-title">Education</h2>
+            <strong>University of Wisconsin–Madison</strong> <br>
+            <em>Bachelor of Science, Computer Science</em> <br>
+            Fall 2024 – Anticipated Spring 2027 <br>
+            Major GPA: 3.9
+            <ul>
+                <li>Classes: Programming II-III, Machine Organization & Programming, Linear Algebra, and Computer Graphics</li>
+                <li>CheeseHacks: Placed 3rd in a 24-hour hackathon, collaborating with a team to develop a vision-based interface for Subway Surfers using Python</li>
+                <li>Wisconsin Robotics: Contributed to the development of an autonomous rover, improving GPS accuracy using Real Time Kinematics (RTK) for precise navigation.</li>
+            </ul>
+            <strong>Marshall High School</strong> <br>
+            Graduation: 2024 <br>
+            GPA: 3.99
+            <ul>
+                <li>FIRST Robotics Team: Led the software sub-team in implementing dynamic, vision-based game piece pickup, autonomous pathfinding, and scoring algorithms for competition robots.</li>
+                <li>Won the 2024 Northern Lights Regional Championship</li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Java, JavaScript, Python, C</li>
+                <li><strong>Frameworks & Libraries:</strong> Spring, Hibernate, AngularJS, Liquibase</li>
+                <li><strong>Tools & Platforms:</strong> Git, Jenkins, PostgreSQL, AWS (SSM, DynamoDB, S3)</li>
+                <li><strong>Technical Skills:</strong> Software Development Lifecycle, Security Best Practices, Database Design, REST APIs</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>Coming soon...</p>
+            <!-- Add more contact links (LinkedIn, Twitter, etc.) if desired -->
+        </section>
+    </div>
+</body>
+</html>
